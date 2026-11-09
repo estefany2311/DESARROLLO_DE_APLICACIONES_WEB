@@ -1,0 +1,9 @@
+target/
+.idea/
+*.iml
+.vscode/
+
+# Material local que no se sube
+docs/
+database/
+postman/

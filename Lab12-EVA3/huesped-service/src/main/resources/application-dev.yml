@@ -1,0 +1,10 @@
+# Ambiente de desarrollo: base local, crea/actualiza tablas y muestra el SQL
+spring:
+  datasource:
+    url: ${DB_URL:jdbc:mysql://localhost:3306/bd_huesped?createDatabaseIfNotExist=true}
+    username: ${DB_USER:root}
+    password: ${DB_PASSWORD:}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true

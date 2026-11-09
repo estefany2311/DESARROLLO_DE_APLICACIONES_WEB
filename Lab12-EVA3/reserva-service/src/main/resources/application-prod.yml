@@ -1,0 +1,18 @@
+# Ambiente de produccion: credenciales y direcciones solo por variables de entorno,
+# no modifica las tablas y no muestra el SQL
+spring:
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+
+# Direcciones de los otros microservicios
+servicios:
+  huesped:
+    url: ${HUESPED_URL}
+  habitacion:
+    url: ${HABITACION_URL}

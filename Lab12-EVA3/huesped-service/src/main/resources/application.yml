@@ -1,0 +1,11 @@
+# Configuracion comun a todos los ambientes
+server:
+  port: ${SERVER_PORT:8081}
+
+spring:
+  application:
+    name: huesped-service
+  profiles:
+    active: dev
+  jpa:
+    open-in-view: false

@@ -1,0 +1,11 @@
+# Configuracion comun a todos los ambientes
+server:
+  port: ${SERVER_PORT:8083}
+
+spring:
+  application:
+    name: reserva-service
+  profiles:
+    active: dev
+  jpa:
+    open-in-view: false
